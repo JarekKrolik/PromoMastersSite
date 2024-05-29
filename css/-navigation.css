@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.header {
+  width: 100%;
+}
+.header .hamburger {
+  width: 30px; /* Szerokość przycisku */
+  height: 2px; /* Wysokość środkowej linii */
+  background-color: #000; /* Kolor linii */
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; /* Animacja dla interakcji */
+}
+.header .hamburger::before,
+.header .hamburger::after {
+  content: ""; /* Wymagane dla pseudo-elementów */
+  position: absolute;
+  width: 100%; /* Szerokość linii równa elementowi głównemu */
+  height: 2px; /* Wysokość linii */
+  background-color: #000; /* Kolor linii */
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; /* Animacja dla interakcji */
+}
+.header .hamburger::before {
+  top: -10px; /* Pozycja górnej linii */
+}
+.header .hamburger::after {
+  bottom: -10px; /* Pozycja dolnej linii */
+}/*# sourceMappingURL=-navigation.css.map */

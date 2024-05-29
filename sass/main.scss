@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+.title {
+    color: black;
+}
+main {
+    max-width: 1466px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+@import "./colors";
+@import "./navigation";
+@import "./home";
+@import "./footer";
