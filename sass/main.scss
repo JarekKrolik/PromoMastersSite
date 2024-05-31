@@ -11,7 +11,7 @@ html {
     color: black;
 }
 main {
-    max-width: 1466px;
+    // max-width: 1466px;
     margin: 0 auto;
     min-height: 100vh;
 }
@@ -19,4 +19,5 @@ main {
 @import "./navigation";
 @import "./home";
 @import "./aboutus";
+@import "./offer";
 @import "./footer";

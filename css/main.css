@@ -15,7 +15,6 @@ html {
 }
 
 main {
-  max-width: 1466px;
   margin: 0 auto;
   min-height: 100vh;
 }
@@ -392,6 +391,185 @@ main {
     border-radius: 14px;
     -webkit-box-shadow: 5px 7px 4px black;
             box-shadow: 5px 7px 4px black;
+  }
+}
+.offer {
+  margin: 20px auto;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgb(164, 189, 211);
+}
+.offer .description {
+  text-align: center;
+  font-size: 18px;
+}
+.offer-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.offer-container h2 {
+  width: 100%;
+  text-align: center;
+  margin: 15px;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+.offer-container-card {
+  width: 97%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid black;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  border-radius: 12px;
+  margin: 25px auto;
+  overflow: hidden;
+}
+.offer-container-card-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12px;
+}
+.offer-container-card-text h3 {
+  text-transform: uppercase;
+  font-size: 26px;
+}
+.offer-container-card-text h4 {
+  margin: 15px 0;
+  font-size: 22px;
+}
+.offer-container-card-text a {
+  display: block;
+  margin: 5px auto;
+  margin-top: auto;
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 80%;
+  border-radius: 5px;
+}
+.offer-container-card-text a:hover {
+  color: white;
+  background-color: black;
+}
+.offer-container-card-text ul {
+  text-align: left;
+  padding: 10px;
+}
+.offer-container-card-text ul li {
+  margin: 7px auto;
+  font-size: 19px;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.offer-container-card-text ul li strong {
+  font-size: 22px;
+}
+.offer-container-card-picture {
+  width: 100%;
+  overflow: hidden;
+}
+.offer-container-card-picture img {
+  width: 100%;
+}
+
+@media (min-width: 762px) {
+  .offer {
+    padding-top: 115px;
+  }
+  .offer .description {
+    text-align: left;
+    font-size: 17px;
+  }
+  .offer-container {
+    max-width: 1260px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .offer-container h2 {
+    text-align: left;
+    font-size: 32px;
+  }
+  .offer-container-card {
+    width: 48%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .offer-container-card-text {
+    text-align: center;
+  }
+  .offer-container-card-text h3 {
+    text-transform: uppercase;
+    font-size: 26px;
+  }
+  .offer-container-card-picture {
+    width: 100%;
+    overflow: hidden;
+  }
+  .offer-container-card-picture img {
+    width: 100%;
   }
 }
 .footer {
