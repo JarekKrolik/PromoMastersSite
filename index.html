@@ -3,6 +3,7 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -23,7 +24,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="#home" class="header-logo">
+      <a href="#home" data-aos="flip-right" class="header-logo">
         <img src="./img/logo500x500.png" alt="logo firmy" />
       </a>
       <div class="header-navigation-hamburger">
@@ -37,19 +38,39 @@
           >
             <img src="./img/logo500x500.png" alt="logo firmy" />
           </li>
-          <a href="#home" class="header-navigation-container-item">
+          <a
+            href="#home"
+            data-aos="flip-right"
+            class="header-navigation-container-item"
+          >
             <p>Home</p>
           </a>
-          <a href="#o-nas" class="header-navigation-container-item">
+          <a
+            href="#o-nas"
+            data-aos="flip-right"
+            class="header-navigation-container-item"
+          >
             <p>O nas</p>
           </a>
-          <a href="#oferta" class="header-navigation-container-item">
+          <a
+            href="#oferta"
+            data-aos="flip-right"
+            class="header-navigation-container-item"
+          >
             <p>Oferta</p>
           </a>
-          <a href="#blog" class="header-navigation-container-item">
+          <a
+            href="#blog"
+            data-aos="flip-right"
+            class="header-navigation-container-item"
+          >
             <p>blog</p>
           </a>
-          <a href="#kontakt" class="header-navigation-container-item">
+          <a
+            href="#kontakt"
+            data-aos="flip-right"
+            class="header-navigation-container-item"
+          >
             <p>Kontakt</p>
           </a>
         </ul>
@@ -59,14 +80,29 @@
       <section class="section home" id="home">
         <div class="shade"></div>
         <div class="home-title">
-          <h1 class="home-title-h1">PromoLeaders</h1>
-          <h2 class="home-title-h2">Marketing, który działa.</h2>
-          <a class="home-title-button" href="#oferta"><p>Usługi</p></a>
+          <h1 data-aos="fade-up" data-aos-duration="1800" class="home-title-h1">
+            PromoLeaders
+          </h1>
+          <h2 data-aos="fade-up" data-aos-duration="2400" class="home-title-h2">
+            Marketing, który działa.
+          </h2>
+          <a
+            data-aos="fade-down"
+            data-aos-duration="3000"
+            class="home-title-button"
+            href="#oferta"
+            ><p>Usługi</p></a
+          >
         </div>
       </section>
       <section class="aboutus section" id="o-nas">
         <div class="aboutus-container">
-          <div class="container-text">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="container-text"
+          >
             <h2 class="aboutus-title title">O nas</h2>
             <h3 class="aboutus-text text">
               Naszą misją jest wspieranie firm, takich jak Twoja, w zdobywaniu
@@ -91,7 +127,12 @@
               Czekamy na Ciebie!
             </h3>
           </div>
-          <div class="aboutus-image">
+          <div
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="aboutus-image"
+          >
             <img src="./img/@reallygre.jpg" alt="" />
           </div>
         </div>
@@ -99,13 +140,14 @@
       <section class="offer section" id="oferta">
         <div class="offer-container">
           <h2 class="offer-title title">Oferta</h2>
-          <h2 class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-            pariatur architecto voluptates natus illum quaerat voluptate,
-            veritatis maxime? Dolorum, unde distinctio. Quam tempora, placeat
-            earum delectus doloribus ducimus accusamus quas.
+          <h2 data-aos="zoom-in" class="description">
+            Nasza oferta jest skierowana do firm i organizacji, które pragną
+            zwiększyć swoją obecność w internecie i mediach społecznościowych.
+            Oferujemy szeroki zakres usług, które pomagają w pozyskiwaniu nowych
+            klientów oraz umacnianiu relacji z obecnymi. Sprawdź, co możemy dla
+            Ciebie zrobić!
           </h2>
-          <div class="offer-container-card">
+          <div data-aos="flip-right" class="offer-container-card">
             <div class="offer-container-card-picture">
               <img src="./img/2024-05-29_20-23-10_2461.png" alt="" />
             </div>
@@ -139,9 +181,9 @@
               <a href="#">zobacz więcej</a>
             </div>
           </div>
-          <div class="offer-container-card">
+          <div data-aos="flip-right" class="offer-container-card">
             <div class="offer-container-card-picture">
-              <img src="./img/2024-05-29_20-37-28_4529 (1).png" alt="" />
+              <img src="./img/workdesk.webp" alt="" />
             </div>
             <div class="offer-container-card-text">
               <h3>Tworzenie treści (tekst, grafika, wideo)</h3>
@@ -168,6 +210,73 @@
                   /></strong>
                   Realizujemy wysokiej jakości filmy promocyjne, które
                   skutecznie przedstawią Twoją ofertę.
+                </li>
+              </ul>
+              <a href="#">zobacz więcej</a>
+            </div>
+          </div>
+          <div data-aos="flip-right" class="offer-container-card">
+            <div class="offer-container-card-picture">
+              <img src="./img/website-647013_640.jpg" alt="" />
+            </div>
+            <div class="offer-container-card-text">
+              <h3>Strony internetowe</h3>
+              <h4>
+                Tworzenie i optymalizacja stron internetowych dostosowanych do
+                potrzeb Twojej firmy.
+              </h4>
+              <ul>
+                <li>
+                  <strong
+                    >Projektowanie i rozwój stron internetowych: <br
+                  /></strong>
+                  Tworzymy nowoczesne i funkcjonalne strony internetowe, które
+                  przyciągną i zatrzymają odwiedzających.
+                </li>
+                <li>
+                  <strong>Optymalizacja SEO: <br /></strong>
+                  Optymalizujemy strony internetowe pod kątem wyszukiwarek, aby
+                  poprawić ich pozycjonowanie i widoczność w sieci.
+                </li>
+                <li>
+                  <strong>Utrzymanie i aktualizacje stron: <br /></strong>
+                  Zapewniamy bieżące utrzymanie i aktualizacje stron, aby były
+                  zawsze aktualne i bezpieczne.
+                </li>
+              </ul>
+              <a href="#">zobacz więcej</a>
+            </div>
+          </div>
+          <div data-aos="flip-right" class="offer-container-card">
+            <div class="offer-container-card-picture">
+              <img
+                src="./img/A_vibrant_creative_scene_1152x896_no_people.png"
+                alt=""
+              />
+            </div>
+            <div class="offer-container-card-text">
+              <h3>Kampanie reklamowe online</h3>
+              <h4>
+                Skuteczne planowanie i realizacja kampanii reklamowych w
+                internecie.
+              </h4>
+              <ul>
+                <li>
+                  <strong
+                    >Kampanie reklamowe na Facebooku i Instagramie: <br
+                  /></strong>
+                  Planujemy i realizujemy kampanie reklamowe, które zwiększą
+                  zasięg i zaangażowanie Twojej marki.
+                </li>
+                <li>
+                  <strong>Google Ads: <br /></strong>
+                  Optymalizujemy kampanie reklamowe w Google, aby przyciągnąć
+                  więcej klientów do Twojej strony internetowej.
+                </li>
+                <li>
+                  <strong>Reklamy wideo i display: <br /></strong>
+                  Tworzymy i zarządzamy kampaniami reklamowymi wideo i display,
+                  które zwiększą widoczność Twojej firmy.
                 </li>
               </ul>
               <a href="#">zobacz więcej</a>
@@ -202,6 +311,7 @@
         </a>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script/script.js"></script>
   </body>
 </html>

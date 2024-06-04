@@ -6,6 +6,7 @@
     .description {
         text-align: center;
         font-size: 18px;
+        padding: 6px 10px;
     }
     &-container {
         width: 100%;
@@ -92,6 +93,7 @@
         .description {
             text-align: left;
             font-size: 17px;
+            padding: 5px 0;
         }
         &-container {
             max-width: 1260px;
@@ -106,7 +108,7 @@
                 font-size: 32px;
             }
             &-card {
-                width: 48%;
+                width: 32%;
                 background-color: white;
                 display: flex;
                 flex-direction: column;
@@ -126,6 +128,10 @@
                     img {
                         width: 100%;
                     }
+                }
+                transition: 0.3s;
+                &:hover {
+                    transform: scale(1.03);
                 }
             }
         }

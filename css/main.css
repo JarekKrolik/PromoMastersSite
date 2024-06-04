@@ -402,6 +402,7 @@ main {
 .offer .description {
   text-align: center;
   font-size: 18px;
+  padding: 6px 10px;
 }
 .offer-container {
   width: 100%;
@@ -516,6 +517,7 @@ main {
   .offer .description {
     text-align: left;
     font-size: 17px;
+    padding: 5px 0;
   }
   .offer-container {
     max-width: 1260px;
@@ -541,7 +543,7 @@ main {
     font-size: 32px;
   }
   .offer-container-card {
-    width: 48%;
+    width: 32%;
     background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -556,6 +558,8 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .offer-container-card-text {
     text-align: center;
@@ -570,6 +574,10 @@ main {
   }
   .offer-container-card-picture img {
     width: 100%;
+  }
+  .offer-container-card:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
 }
 .footer {

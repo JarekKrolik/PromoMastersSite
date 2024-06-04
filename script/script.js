@@ -4,7 +4,7 @@ const date = document.querySelector(".footer-text-date");
 const menuItems = document.querySelectorAll(
   ".header-navigation-container-item"
 );
-
+AOS.init();
 burgerIcon.addEventListener("click", () => {
   menu.classList.toggle("active");
 });
