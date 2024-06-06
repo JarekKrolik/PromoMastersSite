@@ -15,7 +15,6 @@
         overflow: hidden;
         margin: 7px;
         display: flex;
-        flex-direction: column;
         align-items: center;
         img {
             width: 55px;
@@ -24,7 +23,7 @@
 }
 @media (min-width: 762px) {
     .footer {
-        flex-direction: row;
+        width: 100%;
         justify-content: space-evenly;
         &-data {
             display: flex;
@@ -33,16 +32,16 @@
         }
         &-social {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             overflow: hidden;
             margin: 7px;
-            width: 40%;
         }
         img {
-            width: 55px;
+            width: 85px;
             transition: 0.3s;
             border-radius: 50%;
+            margin: 5px 20px;
             &:hover {
                 box-shadow: 5px 5px 8px black;
             }

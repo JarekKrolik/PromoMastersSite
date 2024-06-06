@@ -373,7 +373,9 @@ main {
   }
   .aboutus-container .container-text {
     text-align: left;
-    margin-right: 20px;
+    margin: 0;
+    padding: 0 10px;
+    width: 45%;
   }
   .aboutus-container .container-text h2 {
     margin: 15px 0;
@@ -384,7 +386,7 @@ main {
     font-size: 18px;
   }
   .aboutus-container .aboutus-image {
-    width: 80%;
+    width: 45%;
   }
   .aboutus-container .aboutus-image img {
     width: 100%;
@@ -397,7 +399,7 @@ main {
   margin: 20px auto;
   overflow: hidden;
   width: 100%;
-  background-color: rgb(164, 189, 211);
+  background-color: rgb(212, 229, 243);
 }
 .offer .description {
   text-align: center;
@@ -612,10 +614,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -626,10 +624,7 @@ main {
 
 @media (min-width: 762px) {
   .footer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    width: 100%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -648,22 +643,22 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     overflow: hidden;
     margin: 7px;
-    width: 40%;
   }
   .footer img {
-    width: 55px;
+    width: 85px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border-radius: 50%;
+    margin: 5px 20px;
   }
   .footer img:hover {
     -webkit-box-shadow: 5px 5px 8px black;

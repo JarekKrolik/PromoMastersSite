@@ -40,7 +40,9 @@
             justify-content: space-between;
             .container-text {
                 text-align: left;
-                margin-right: 20px;
+                margin: 0;
+                padding: 0 10px;
+                width: 45%;
                 & h2 {
                     margin: 15px 0;
                     text-transform: uppercase;
@@ -51,7 +53,7 @@
                 }
             }
             & .aboutus-image {
-                width: 80%;
+                width: 45%;
                 img {
                     width: 100%;
                     border-radius: 14px;
