@@ -399,7 +399,7 @@ main {
   margin: 20px auto;
   overflow: hidden;
   width: 100%;
-  background-color: rgb(212, 229, 243);
+  background-color: #85b3c8;
 }
 .offer .description {
   text-align: center;
@@ -582,10 +582,114 @@ main {
             transform: scale(1.03);
   }
 }
+.contact {
+  max-width: 1260px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+}
+.contact h2 {
+  text-transform: uppercase;
+  margin: 15px auto;
+}
+.contact-container {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact-container-data {
+  margin: 20px auto;
+  padding: 10px;
+}
+.contact-container-form form {
+  border: 1px solid black;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.contact-container-form form input {
+  border-radius: 5px;
+}
+.contact-container-form form textarea {
+  padding: 4px;
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 5px;
+}
+.contact-container-form form button {
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+@media (min-width: 762px) {
+  .contact {
+    padding-top: 80px;
+    text-align: left;
+  }
+  .contact h2 {
+    text-transform: uppercase;
+    margin: 15px auto;
+  }
+  .contact-container {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-container-data {
+    width: 45%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .contact-container-form {
+    width: 45%;
+    text-align: center;
+  }
+  .contact-container-form form {
+    padding: 15px;
+  }
+  .contact-container-form form input {
+    padding: 6px;
+  }
+  .contact-container-form form textarea {
+    padding: 6px;
+  }
+  .contact-container-form form button {
+    padding: 10px;
+  }
+}
 .footer {
   width: 100%;
   padding: 10px;
-  background-color: #fff;
+  background-color: #85b3c8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,22 +713,30 @@ main {
   margin: 8px;
 }
 .footer-social {
+  width: 100%;
   overflow: hidden;
-  margin: 7px;
+  margin: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .footer-social img {
-  width: 55px;
+  width: 65px;
 }
 
 @media (min-width: 762px) {
   .footer {
     width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -643,6 +755,7 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -650,18 +763,25 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     overflow: hidden;
     margin: 7px;
   }
-  .footer img {
+  .footer .img {
     width: 85px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border-radius: 50%;
     margin: 5px 20px;
+    overflow: hidden;
   }
-  .footer img:hover {
-    -webkit-box-shadow: 5px 5px 8px black;
-            box-shadow: 5px 5px 8px black;
+  .footer .img img {
+    padding: 3px;
+    width: 100%;
+  }
+  .footer .img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }/*# sourceMappingURL=main.css.map */

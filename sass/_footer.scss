@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     padding: 10px;
-    background-color: $mainWhite;
+    background-color: $lighterBlue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,18 +12,21 @@
         margin: 8px;
     }
     &-social {
+        width: 100%;
         overflow: hidden;
-        margin: 7px;
+        margin: 14px;
         display: flex;
         align-items: center;
+        justify-content: space-evenly;
         img {
-            width: 55px;
+            width: 65px;
         }
     }
 }
 @media (min-width: 762px) {
     .footer {
         width: 100%;
+        flex-direction: row;
         justify-content: space-evenly;
         &-data {
             display: flex;
@@ -32,18 +35,24 @@
         }
         &-social {
             display: flex;
+            width: auto;
             flex-direction: row;
             align-items: center;
+            justify-content: center;
             overflow: hidden;
             margin: 7px;
         }
-        img {
+        .img {
             width: 85px;
             transition: 0.3s;
-            border-radius: 50%;
             margin: 5px 20px;
+            overflow: hidden;
+            img {
+                padding: 3px;
+                width: 100%;
+            }
             &:hover {
-                box-shadow: 5px 5px 8px black;
+                transform: scale(1.1);
             }
         }
     }
