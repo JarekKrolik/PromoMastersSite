@@ -6,6 +6,7 @@
 html {
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
+    font-size: 62.5%;
 }
 .title {
     color: black;
@@ -20,4 +21,5 @@ main {
 @import "./aboutus";
 @import "./offer";
 @import "./contact";
+@import "./projects";
 @import "./footer";

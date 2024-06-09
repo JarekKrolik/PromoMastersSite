@@ -1,20 +1,20 @@
 .footer {
     width: 100%;
-    padding: 10px;
+    padding: 1rem;
     background-color: $lighterBlue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 22px;
+    font-size: 2.2rem;
     &-data {
         display: flex;
         flex-direction: column;
-        margin: 8px;
+        margin: 0.8rem;
     }
     &-social {
         width: 100%;
         overflow: hidden;
-        margin: 14px;
+        margin: 1.4rem;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -31,7 +31,7 @@
         &-data {
             display: flex;
             flex-direction: column;
-            margin: 8px;
+            margin: 0.8rem;
         }
         &-social {
             display: flex;
@@ -40,15 +40,15 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            margin: 7px;
+            margin: 0.7rem;
         }
         .img {
             width: 85px;
             transition: 0.3s;
-            margin: 5px 20px;
+            margin: 0.5rem 2rem;
             overflow: hidden;
             img {
-                padding: 3px;
+                padding: 0.3rem;
                 width: 100%;
             }
             &:hover {
