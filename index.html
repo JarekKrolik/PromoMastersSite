@@ -64,7 +64,7 @@
             data-aos="flip-right"
             class="header-navigation-container-item"
           >
-            <p>Nasze projekty</p>
+            <p>Portfolio</p>
           </a>
           <a
             href="#kontakt"
@@ -178,7 +178,7 @@
                   osiągać jak najlepsze rezultaty.
                 </li>
               </ul>
-              <a href="#">zobacz więcej</a>
+              <!-- <a href="#">zobacz więcej</a> -->
             </div>
           </div>
           <div data-aos="flip-right" class="offer-container-card">
@@ -212,7 +212,7 @@
                   skutecznie przedstawią Twoją ofertę.
                 </li>
               </ul>
-              <a href="#">zobacz więcej</a>
+              <!-- <a href="#">zobacz więcej</a> -->
             </div>
           </div>
           <div data-aos="flip-right" class="offer-container-card">
@@ -244,7 +244,7 @@
                   zawsze aktualne i bezpieczne.
                 </li>
               </ul>
-              <a href="#">zobacz więcej</a>
+              <!-- <a href="#">zobacz więcej</a> -->
             </div>
           </div>
           <div data-aos="flip-right" class="offer-container-card">
@@ -279,7 +279,7 @@
                   które zwiększą widoczność Twojej firmy.
                 </li>
               </ul>
-              <a href="#">zobacz więcej</a>
+              <!-- <a href="#">zobacz więcej</a> -->
             </div>
           </div>
         </div>
@@ -287,13 +287,13 @@
       <section class="projects section" id="projects">
         <div class="shade"></div>
         <h2 class="projects-title title">Nasze projekty</h2>
-        <h4 class="projects-title-text text">
+        <h4 data-aos="flip-up" class="projects-title-text text">
           W tej sekcji prezentujemy nasze dotychczasowe realizacje i osiągnięcia
           w zakresie zarządzania profilami na Facebooku. Zapraszamy do
           przeglądania naszych prac i odkrycia, jak możemy pomóc Twojej firmie
           osiągnąć nowe wyżyny w marketingu internetowym.
         </h4>
-        <div class="projects-container">
+        <div data-aos="flip-down" class="projects-container">
           <div class="projects-container-card">
             <div
               class="fb-page"
@@ -388,16 +388,19 @@
       </section>
       <section class="contact section" id="kontakt">
         <h2 class="contact-title title">Kontakt</h2>
-        <h4 class="contact-title-text text">
+        <h4 data-aos="zoom-in" class="contact-title-text text">
           Jeśli masz jakiekolwiek pytania lub potrzebujesz dodatkowych
           informacji na temat naszych usług, jesteśmy tutaj, aby Ci pomóc.
           Skontaktuj się z nami za pośrednictwem poniższych danych kontaktowych:
         </h4>
         <div class="contact-container">
-          <div class="contact-container-data">
+          <div data-aos="zoom-in" class="contact-container-data">
             <p><span>Telefon:</span>503039612</p>
-            <p><span>Email:</span>503039612</p>
-            <p><span>Telefon:</span>503039612</p>
+            <p>
+              <span>Email:</span
+              ><a href="mailto:promoleaders@vp.pl">promoleaders@vp.pl</a>
+            </p>
+            <p><span>Facebook:</span><a href="#">Kliknij !</a></p>
           </div>
           <div class="contact-container-image">
             <img
@@ -405,8 +408,8 @@
               alt="kobieta z zestawem słuchawkowym na głowie, pracująca w call center"
             />
           </div>
-          <div class="contact-container-form">
-            <form action="#" method="post">
+          <div data-aos="zoom-in" class="contact-container-form">
+            <form action="process_form.php" method="post">
               <label for="first-name">Imię:</label>
               <input type="text" id="first-name" name="first-name" required />
 

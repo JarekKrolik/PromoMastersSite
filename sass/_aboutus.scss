@@ -17,6 +17,10 @@
                 text-transform: uppercase;
                 font-size: 3.2rem;
             }
+            & h3 {
+                font-size: 1.8rem;
+                padding: 0 1rem;
+            }
         }
         & .aboutus-image {
             width: 95%;
@@ -48,7 +52,7 @@
                     font-size: 3.2rem;
                 }
                 & h3 {
-                    font-size: 1.8rem;
+                    padding: 0;
                 }
             }
             & .aboutus-image {
